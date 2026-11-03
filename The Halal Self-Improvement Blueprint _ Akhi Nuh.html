@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Halal Self-Improvement Blueprint | Akhi Nuh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0e0d;--fg:#f3f0e8;--mute:#a19d92;--line:#2b2a27;--card:#181816;--y:#ffd21f;--on-y:#0e0e0d;
+--disp:'Anton','Impact','Arial Narrow',sans-serif;--body:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f2ec;--fg:#141412;--mute:#6a665c;--line:#d9d5c9;--card:#ebe8de;--y:#ffd21f;color-scheme:light}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:.98;margin:0;letter-spacing:.005em;text-transform:uppercase}
+h1{font-size:clamp(52px,9vw,112px);line-height:1.06}
+h2{font-size:clamp(36px,5.6vw,64px);margin-bottom:20px}
+h3{font-size:26px;line-height:1.05}
+p{margin:0 0 1em;max-width:62ch}
+.y{background:var(--y);color:var(--on-y);padding:.03em .14em .06em;display:inline-block;line-height:1;margin-top:.08em}
+:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.mark{font-family:var(--disp);font-size:24px;text-transform:uppercase;letter-spacing:.02em}
+.mark i{font-style:normal;color:var(--y)}
+header a.t{color:var(--mute);font-size:15px;text-decoration:none;border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;padding:40px 0 88px;align-items:start}
+.hero p.lede{font-size:19px;color:var(--mute);margin:26px 0 30px}
+.hero p.lede b{color:var(--fg);font-weight:600}
+form{display:grid;gap:10px;max-width:460px}
+input{font:inherit;color:var(--fg);background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:15px 16px}
+input::placeholder{color:var(--mute)}
+input:focus{border-color:var(--y);outline:none}
+button,.btn{font:700 17px var(--body);background:var(--y);color:var(--on-y);border:0;border-radius:6px;padding:16px 22px;cursor:pointer;text-align:center;text-decoration:none;display:inline-block}
+button:hover,.btn:hover{filter:brightness(1.08)}
+.fine{font-size:14px;color:var(--mute);margin:4px 0 0}
+.ok{display:none;max-width:460px;border:1.5px solid var(--y);border-radius:8px;padding:22px}
+.ok h3{margin-bottom:10px}
+.done .ok{display:block}.done form{display:none}
+/* routine card: the one memorable element */
+.day{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:22px 22px 18px}
+.day h3{font-size:22px;margin-bottom:4px}
+.day .sub{font-size:14px;color:var(--mute);margin:0 0 14px}
+.day ul{list-style:none;margin:0;padding:0}
+.day li{border-top:1px solid var(--line)}
+.day label{display:flex;gap:14px;align-items:center;padding:12px 2px;cursor:pointer;font-size:16px}
+.day input{appearance:none;-webkit-appearance:none;width:24px;height:24px;flex:none;padding:0;border:2px solid var(--mute);border-radius:50%;display:grid;place-items:center;background:transparent}
+.day input:checked{background:var(--y);border-color:var(--y)}
+.day input:checked::after{content:"";width:6px;height:11px;border:solid var(--on-y);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.day input:checked+span{color:var(--mute);text-decoration:line-through}
+.day em{font-style:normal;color:var(--mute);font-size:13px;margin-left:auto;text-align:right}
+.bar{height:6px;background:var(--line);border-radius:3px;margin-top:14px;overflow:hidden}
+.bar div{height:100%;width:0;background:var(--y);transition:width .3s}
+.count{font-size:14px;color:var(--mute);margin:10px 0 0}
+section{padding:80px 0;border-top:1px solid var(--line)}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;border:1.5px solid var(--line);border-radius:10px;overflow:hidden}
+.vids div{padding:22px;border-right:1px solid var(--line)}
+.vids div:last-child{border:0}
+.vids b{display:block;font-weight:600;line-height:1.35;margin-bottom:8px}
+.vids span{color:var(--mute);font-size:14px}
+.pain{columns:2;column-gap:56px;margin-top:28px;padding:0;list-style:none}
+.pain li{break-inside:avoid;padding:0 0 26px}
+.pain b{display:block;font-size:19px;margin-bottom:4px}
+.pain span{color:var(--mute)}
+.mods{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.mod{border:1.5px solid var(--line);border-radius:10px;padding:26px}
+.mod h3{margin-bottom:12px}
+.mod ul{margin:0;padding-left:1.1em;color:var(--mute)}
+.mod li{margin-bottom:6px}
+.road{margin-top:30px;border-left:3px solid var(--y);padding-left:26px;display:grid;gap:22px}
+.road b{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:24px;display:block}
+.road span{color:var(--mute)}
+.two{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.quote{font-family:var(--disp);text-transform:uppercase;font-size:clamp(30px,4vw,46px);line-height:1.05;margin:0}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{margin:12px 0 0;color:var(--mute)}
+.final{text-align:left}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+.stick{display:none}
+select{font:inherit;color:var(--fg);background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:15px 16px}
+.ty h1{font-size:clamp(46px,8vw,96px)}
+.steps{display:grid;gap:14px;margin:34px 0 0;padding:0;list-style:none;counter-reset:s;max-width:640px}
+.steps li{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:14px}
+.steps li::before{counter-increment:s;content:counter(s);font-family:var(--disp);font-size:30px;color:var(--y);width:28px;flex:none}
+.vid{aspect-ratio:16/9;background:var(--card);border:1.5px solid var(--line);border-radius:10px;display:grid;place-items:center;text-align:center;padding:20px;margin:36px 0 0;color:var(--mute);font-size:15px}
+.vid i{width:68px;height:68px;border-radius:50%;background:var(--y);display:block;position:relative;margin:0 auto 14px}
+.vid i::after{content:"";position:absolute;left:27px;top:20px;border:14px solid transparent;border-left:22px solid var(--on-y);border-right:0}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.fit div{border:1.5px solid var(--line);border-radius:10px;padding:22px}
+.fit ul{margin:10px 0 0;padding-left:1.1em;color:var(--mute)}
+.fit li{margin-bottom:6px}
+#aok{display:none}
+@media(max-width:860px){.stick{display:block;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:9;background:var(--y);color:var(--on-y);text-align:center;font-weight:700;padding:15px;border-radius:8px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.35)}footer{padding-bottom:100px}.fit{grid-template-columns:1fr}}
+@media(max-width:860px){.hero,.two,.mods{grid-template-columns:1fr;gap:36px}.vids{grid-template-columns:1fr}.vids div{border-right:0;border-bottom:1px solid var(--line)}.pain{columns:1}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="home">
+<a class="stick" href="#apply">Get the free blueprint</a>
+<div class="w">
+<header><div class="mark">Akhi <i>Nuh</i></div><a class="t" href="https://www.youtube.com/@AkhiNuh/videos">Watch on YouTube</a></header>
+
+<div class="hero">
+<div>
+<h1>Fix your Fajr.<br>The rest <span class="y">follows.</span></h1>
+<p class="lede">I never missed a prayer for 5 years, and everything else I built stood on that. The free Halal Self-Improvement Blueprint is the system I wish I had on day one: <b>your daily routine, a 30 day reset for secret habits, a halal income roadmap and a 90 day plan.</b></p>
+<div class="cta">
+<form data-capture>
+<input type="text" name="n" placeholder="First name" autocomplete="given-name" required aria-label="First name">
+<input type="email" name="e" placeholder="Your best email" autocomplete="email" required aria-label="Email">
+<button type="submit">Send me the blueprint</button>
+<p class="fine">Free 3 page PDF, sent to your inbox. No spam. Unsubscribe anytime.</p>
+</form>
+<div class="ok"><h3>Check your inbox, akhi</h3><p>The blueprint is on its way. If it isn’t there in a few minutes, look in spam or promotions.</p><p>Reading it is 1% of the work. Want me to hold you accountable through the 90 days?</p><a class="btn" href="#apply">Apply for a free 15 minute call</a></div>
+</div>
+</div>
+
+<aside class="day" aria-label="Sample daily routine from the blueprint">
+<h3>Page 1 of the blueprint</h3>
+<p class="sub">Tap through a day the way the tracker lays it out.</p>
+<ul id="rt">
+<li><label><input type="checkbox"><span>Fajr at the masjid, with Sunnah</span></label></li>
+<li><label><input type="checkbox"><span>Morning athkar and 10 minutes of Quran</span></label></li>
+<li><label><input type="checkbox"><span>Deep work block on your skill</span><em>2 to 3 hrs</em></label></li>
+<li><label><input type="checkbox"><span>Dhuhr and Asr on time</span></label></li>
+<li><label><input type="checkbox"><span>Training session</span><em>45 to 60 min</em></label></li>
+<li><label><input type="checkbox"><span>Maghrib and Isha, then family or reading</span></label></li>
+<li><label><input type="checkbox"><span>Evening athkar, screens off</span></label></li>
+</ul>
+<div class="bar"><div id="pb"></div></div>
+<p class="count" id="ct">0 of 7 done. Protect tomorrow’s Fajr.</p>
+</aside>
+</div>
+</div>
+
+<section>
+<div class="w">
+<h2>Not sure it’s for you? Start here.</h2>
+<p style="color:var(--mute)">The blueprint is built from the videos brothers already return to. Watch one first if you want to hear how I think.</p>
+<div class="vids">
+<div><b>Maybe Allah Led You to This Video</b><span>9.1K views</span></div>
+<div><b>Where You Can Find a Righteous Muslim Wife In 2024</b><span>13K views</span></div>
+<div><b>It’s lowkey easy to get ahead of 99% of people using Islam</b><span>1.9K views</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="w two">
+<div><h2>You know what to do. You just don’t do it.</h2></div>
+<ul class="pain">
+<li><b>Fajr slips, then the whole day does.</b><span>Late night scrolling, a missed prayer, and you spend the day feeling far from Allah.</span></li>
+<li><b>The same private fall, again.</b><span>Guilt, then promises, then the same loop. You need a system, not another vow.</span></li>
+<li><b>Broke, and buying courses.</b><span>Overthinking, new tabs, new gurus, and nothing shipped.</span></li>
+<li><b>Strong intentions, no structure.</b><span>The gym, the Quran, the skill. All wanted, none scheduled.</span></li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="w">
+<h2>What’s inside</h2>
+<p style="color:var(--mute)">A short, practical PDF. Print it, fill it in, start tonight.</p>
+<div class="mods">
+<div class="mod"><h3>Prayer and routine</h3><ul><li>The phone, lights and wudu setup that gets you out of bed for Fajr</li><li>Nightly athkar to close the day</li><li>The full daily routine and habit tracker</li></ul></div>
+<div class="mod"><h3>Vice reset</h3><ul><li>A 30 day protocol for porn, masturbation and cheap dopamine</li><li>How to block, who to tell, what to do in the moment</li><li>What to do after a slip so one fall doesn’t become ten</li></ul></div>
+<div class="mod"><h3>Halal income</h3><ul><li>Why Muslim men stay broke, and the two traps behind it</li><li>One high value skill instead of five half started ones</li><li>A month by month path from first skill to first clients</li></ul></div>
+<div class="mod"><h3>Body and marriage</h3><ul><li>Training as worship, not vanity</li><li>Becoming a man a righteous family wants for their daughter</li><li>Why character and work ethic outweigh a big bank balance</li></ul></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="w two">
+<div><h2>The 90 days</h2><p style="color:var(--mute)">The blueprint ends with a plan, because information without action changes nothing.</p></div>
+<div class="road">
+<div><b>Days 1 to 30</b><span>Every prayer on time. Run the full vice reset and cold wudu protocol.</span></div>
+<div><b>Days 31 to 60</b><span>Train four times a week. Two hours a day on one halal digital skill.</span></div>
+<div><b>Days 61 to 90</b><span>Reach out to 30 prospects. Land your first paying client.</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="w two">
+<p class="quote">I went from broke and overthinking to disciplined, because I fixed my deen first.</p>
+<div>
+<p>I’m a revert. Nobody handed me habits. I wasted years, spent over $30,000 on courses, and kept looking for the trick.</p>
+<p>The trick was boring. Pray correctly, protect your sleep, stay away from what drains you, and put your hours into one skill. That order is what took me to $10k a month halal without a degree, and later to marrying a hafiza as a revert.</p>
+<p>This blueprint is that order, written down so you can skip the years I lost.</p>
+</div>
+</div>
+</section>
+
+<section id="apply">
+<div class="w two final">
+<div><h2>Get the blueprint. <span class="y">Free.</span></h2><p style="color:var(--mute)">Then pick one thing from page 1 and do it tomorrow morning, inshaAllah.</p></div>
+<div class="cta">
+<form data-capture>
+<input type="text" name="n" placeholder="First name" autocomplete="given-name" required aria-label="First name">
+<input type="email" name="e" placeholder="Your best email" autocomplete="email" required aria-label="Email">
+<button type="submit">Send me the blueprint</button>
+<p class="fine">Free PDF. No spam. Unsubscribe anytime.</p>
+</form>
+<div class="ok"><h3>Check your inbox, akhi</h3><p>The blueprint is on its way.</p><a class="btn" href="#apply">Apply for a free 15 minute call</a></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="w" style="max-width:780px">
+<h2>Questions</h2>
+<details><summary>Who is this for?</summary><p>Young Muslim men, born Muslim or revert, who want to improve their deen, mindset, body and income without leaving Islam out of the plan.</p></details>
+<details><summary>Is it really free?</summary><p>Yes. You give your name and email, and the PDF lands in your inbox.</p></details>
+<details><summary>I’m very lazy and I keep relapsing. Will this help?</summary><p>That is who it was written for. The steps are small, specific and built to work on your worst days too.</p></details>
+<details><summary>What is the 1:1 call?</summary><p>An optional free 15 minute call after you read the blueprint, to see if working together makes sense. No pressure.</p></details>
+</div>
+</section>
+
+<footer><div class="w">Akhi Nuh. Helping Muslims become the best version of themselves.</div></footer>
+</div>
+
+<div id="thanks" hidden>
+<div class="w ty">
+<header><div class="mark">Akhi <i>Nuh</i></div><a class="t" href="#home">Back to the main page</a></header>
+<div style="padding:36px 0 24px">
+<h1>You’re in.<br><span class="y">Now do this.</span></h1>
+<ol class="steps">
+<li><span><b>Open your inbox.</b> The blueprint is on its way. If it isn’t there in a few minutes, check spam or promotions and move it to your main inbox.</span></li>
+<li><span><b>Watch the 3 minute video below.</b> It explains how to use the blueprint and the one thing that decides whether it works for you.</span></li>
+<li><span><b>Decide if you want company.</b> If you do, book a free call at the bottom of this page.</span></li>
+</ol>
+<div class="vid"><div><i></i>A 3 minute message from Akhi Nuh goes here.<br>Drop in the YouTube or Vimeo embed.</div></div>
+</div>
+</div>
+<section>
+<div class="w ty">
+<h2>Want me in your corner for the 90 days?</h2>
+<p style="color:var(--mute)">A PDF gives you the plan. Most brothers don’t fail because the plan was wrong. They fail in week two, alone, when nobody is checking. The Muslim Discipline Coaching Program is 1:1 accountability for the full 90 days.</p>
+<div class="mods">
+<div class="mod"><h3>A routine built around your life</h3><ul><li>Your work, study and prayer times, mapped properly</li><li>Adjusted every week as life changes</li></ul></div>
+<div class="mod"><h3>Weekly accountability calls</h3><ul><li>Fajr, training and your reset, reviewed honestly</li><li>A clear next step before each call ends</li></ul></div>
+<div class="mod"><h3>A halal income roadmap</h3><ul><li>One skill, one path, no more course hopping</li><li>Review of your outreach and first offers</li></ul></div>
+<div class="mod"><h3>Direct WhatsApp access</h3><ul><li>Message me when you slip or feel the pull</li><li>Get back up the same day, not the same month</li></ul></div>
+</div>
+<div class="fit">
+<div><h3>This is for you if</h3><ul><li>You’ll show up to the weekly call</li><li>You’re ready to be told the truth</li><li>You want to build deen, discipline and income together</li></ul></div>
+<div><h3>Skip it if</h3><ul><li>You want hype instead of work</li><li>You’re looking for a shortcut to money</li><li>You’re not ready to change your routine</li></ul></div>
+</div>
+<h2 style="margin-top:56px">Book your free 15 minute call</h2>
+<p style="color:var(--mute)">We’ll talk about where you are, what is in the way, and whether coaching fits. No pressure, no hard sell.</p>
+<form class="apply" id="af">
+<input type="text" placeholder="First name" required aria-label="First name">
+<input type="tel" placeholder="WhatsApp number with country code" required aria-label="WhatsApp number">
+<select required aria-label="Biggest struggle"><option value="">Your biggest struggle right now</option><option>Missing prayers, especially Fajr</option><option>Secret habits I can’t break</option><option>Money and direction</option><option>Laziness and procrastination</option><option>All of the above</option></select>
+<button type="submit">Book my free call</button>
+<p class="fine">Free, 15 minutes, no obligation.</p>
+</form>
+<div class="ok" id="aok"><h3>Request received</h3><p>I’ll message you on WhatsApp to pick a time, inshaAllah. Until then, open page 1 of the blueprint and do tomorrow’s Fajr.</p></div>
+</div>
+</section>
+<footer><div class="w">Akhi Nuh. Helping Muslims become the best version of themselves.</div></footer>
+</div>
+
+<script>
+(function(){
+var boxes=document.querySelectorAll('#rt input'),pb=document.getElementById('pb'),ct=document.getElementById('ct');
+function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++});pb.style.width=(n/boxes.length*100)+'%';
+ct.textContent=n===boxes.length?'7 of 7 done. That is what the 90 days are made of.':n+' of 7 done. Protect tomorrow’s Fajr.'}
+boxes.forEach(function(b){b.addEventListener('change',upd)});
+document.querySelectorAll('form[data-capture]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();
+location.hash='thanks'})});
+})();
+</script>
+<script>
+(function(){
+var h=document.getElementById('home'),t=document.getElementById('thanks');
+function route(){var on=location.hash==='#thanks';t.hidden=!on;h.hidden=on;document.title=on?'You’re in | Akhi Nuh':'The Halal Self-Improvement Blueprint | Akhi Nuh';if(on)window.scrollTo(0,0)}
+window.addEventListener('hashchange',route);route();
+document.getElementById('af').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('aok').style.display='block'});
+})();
+</script>
+</body>
+</html>
